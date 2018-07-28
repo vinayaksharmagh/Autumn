@@ -37,13 +37,13 @@ struct st_live
 
 
 
-layout(std140, binding=3) uniform live //uniform block which contains object of struct st_live as its member
+layout(std140, binding=3) uniform live 
 {
 	st_live l_obj[400];
 };
 
 
-struct st_matrix//Since both members are mat4 so we don't need to worry about padding
+struct st_matrix/
 {
 	mat4 M_proj;
 	mat4 M_view;
@@ -79,10 +79,10 @@ layout(std140,binding=4) uniform matrix
 
 
 
-out tex_io//name of in/out block stays same but name of object can differ(usually depending weather its at input or output end)
+out tex_io
 {
 	vec2 tex_pos;
-	flat int tex_index;//flat qualifier is used to prevent interpolation of quantity while reaching fragment shader
+	flat int tex_index;
 }tex_out;
 
 
@@ -96,10 +96,6 @@ void main()
 	tex_out.tex_pos = t_pos[gl_VertexID];
 	tex_out.tex_index = i%5;
 
-
-
-	m_obj;
-	l_obj;
 }
 
 
