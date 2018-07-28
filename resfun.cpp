@@ -12,12 +12,10 @@
 #include"app.h"
 #include"error.h"
 
-//D) here we have removed fill_prog function and shifted it to class c_prog's overloaded pure() (See conc.cpp //A)
-
 
 namespace N_app
 {
-	void load_shad(std::string name, GLuint & sh)//load_shad reads corrospinding file and gets its string(See //1), points to that string via array of pointer(See //2) and using this array of pointer loads source code in shader object(See //3)
+	void load_shad(std::string name, GLuint & sh)//load_shad reads corrospinding file and gets its string
 	{
 		std::ifstream ifs(name.c_str());
 
@@ -71,7 +69,7 @@ namespace N_app
 	}
 
 
-	////////////////////////////////////////////////////////////////C////////////////////////////////////////////////////////////////////
+	
 
 
 
@@ -102,35 +100,9 @@ namespace N_app
 		);
 	}
 
-	
-	/////////////////////////////////////////////////////////////C/////////////////////////////////////////////////////////////////////
-
-	/*
-	void gen_tex(float* data, int w, int h)
-	{
-		int x, y;//they corrospoind to x,y coord of fragments
-
-		for (y = 0; y < h; ++y)
-		{
-			for (x = 0; x < w; ++x)
-			{
-
-				data[(y*w + x) * 4 + 0] = float((x&y) & 0xff) / 255.0;
-				data[(y*w + x) * 4 + 1] = float((x | y) & 0xFF) / 255.0;
-
-				data[(y*w + x) * 4 + 2] = float((x^y) & 0xFF) / 255.0;
-				data[(y*w + x) * 4 + 3] = 1.0;
 
 
-			}
-
-
-		}
-	}
-	*/
-
-
-	void gen_tex(float* data, int w, int h)//this gen_tex creates a checkbox pattern, by altering the color between 0 and 1
+	void gen_tex(float* data, int w, int h)//gen_tex creates a checkbox pattern, by altering the color between 0 and 1
 	//our aim is to have black and white boxes alternately among adjacent fragments , this is acheived as exp below
 
 	{
@@ -262,6 +234,6 @@ namespace N_app
 
 		}
 	}
-	/////////////////////////////////////////////////////////////A/////////////////////////////////////////////////////////////////////
+	
 
 
