@@ -38,5 +38,6 @@ file info
 -stb_image.cpp : required by stb_image libruary
 
 -Vertex.txt  : Vertex shader code, it contains trasformation matricies, uniform blocks and carries out trasformation of vertex position                 and then sets it to gL_Position. It also sends texture coordinates to fragment shader.
+
 -Fragment.txt: Fragment shader code, obtains texture coordinates from vertex shader. Apart from this it also recieves 2D texture array.
              
