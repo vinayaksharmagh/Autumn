@@ -1,5 +1,5 @@
 # Autumn
-This project was created using OpenGL API . It creates a region of randomly scattered particles (here leafs) which are made to fall from top of display to bottom in an animated manner.Once a particle cross the bottom threshold of screen, it is pooped from there and repositioned at some offset on top so that it can again drop down as a new particle.Randomness of particles maintained as long as the program (/animation) runs
+This project was created using Modern OpenGL API . It creates a region of randomly scattered particles (here leafs) which are made to fall from top of display to bottom in an animated manner.Once a particle cross the bottom threshold of screen, it is pooped from there and repositioned at some offset on top so that it can again drop down as a new particle.Randomness of particles maintained as long as the program (/animation) runs
 
 Other External Libruaries used
 
