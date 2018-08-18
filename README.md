@@ -3,6 +3,9 @@ This project was created using Modern OpenGL API . It creates a region of random
 
 (runtime video: https://www.youtube.com/watch?v=bL7ScJtLMn0&t=4s )
 
+
+Language Used: C++
+
 Other External Libruaries used
 
 -GLM
