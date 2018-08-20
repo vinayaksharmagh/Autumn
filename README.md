@@ -30,9 +30,9 @@ file info
 -abst.h     : declares an abstract class( named "abst")  with a pure virtual function( named "pure" ) 
 
 -conc.cpp   : defines all the concrete classes (inherited from abstract class "abst" ) .This file is critical as it contains various 
-              overridden definitions of function "pure" which is binded dynamically from different parts of code in application
+              overridden definitions of function "pure" which is dynamically binded from different parts of code in application
               (This has been done to partition code logically without having to create many different functions)
-              {Yes, I know that dynamic invocation of function is slower than static one but I have done such partition for 
+              {Yes, I know that dynamic binding of function is slower than static one but I have done such partition for 
               ease of coding and debugging (just like error handling is done despite its known effects on performance of execution).
               In the final release code (for building exe), dynamic binding calls can be replaced by corrosponding definitions in                       conc.cpp}
 
